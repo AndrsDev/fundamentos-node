@@ -2,7 +2,7 @@ const http = require('http')
 
 
 const router = (req, res) => {
-
+  console.log('New request!')
   switch (req.url) {
     case '/hello':
       res.writeHead(200, { 'Content-Type': 'text/plain'});
